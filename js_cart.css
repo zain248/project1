@@ -1,0 +1,298 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow-x: hidden;
+}
+nav{
+    height: 12vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.main{
+    width: 100%;
+    height: 60vh;
+    /* border: 1px solid #000; */
+    background-image: url(./hero.jpg);
+    background-size: 100% 100%;
+}
+.logo{
+    width: 10vw;
+    height: 4vh;
+    /* border: 1px solid #000; */
+    background-image: url(./logo.jpg);
+    background-size: 100% 100%;
+    margin-left: -14%;
+}
+.carticon{
+    width: 2.5vw;
+    height: 4.2vh;
+    /* border: 1px solid #000; */
+    background-image: url(./cart.png);
+    background-size: 100% 100%;
+}
+.reddiv{
+    width: 22px;
+    height: 22px;
+    background-color: red;
+    border-radius: 50%;
+    margin-top: -7px;
+    margin-left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5vh;
+    color: white;
+}
+.textdiv{
+    width: 100%;
+    height: 13vh;
+    /* border: 1px solid #000; */
+    background-color: rgb(207, 173, 173);
+}
+.textdiv>h1{
+    padding: 1px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 8vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+}
+.coursemain{
+    width: 100%;
+    height: 200vh;
+    /* border: 1px solid #000; */
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3,25.3%);
+    justify-content: space-around;
+    padding: 0 7%;
+    box-sizing: border-box; 
+}
+.coursediv{
+    margin-top: 40px;
+    width: 23vw;
+    height: 55vh;
+    /* border: 1px solid #000; */
+    background-color: rgb(167, 218, 162);
+}
+.courseimg{
+    width: 100%;
+    height: 50%;
+    background-color: cyan;
+    background-size: 100% 100%;
+
+}
+.courseimg>img{
+    height: 100%;
+    width: 100%;
+    /* background-size: 100% 100%; */
+}
+.textdiv{
+    width: 100%;
+    height: 50%;
+    background-color: rgb(238, 237, 237);
+    background-size: 100% 100%;
+    padding: 1px;
+    box-sizing: border-box;
+
+}
+.coursename{
+    padding: 1px;
+    box-sizing: border-box;
+    margin-top: 7px;
+    margin-left: 10px;
+    font-size: 2.3vh;
+    margin-right: 1px;
+}
+.sellername{
+    font-size: 2.2vh;
+  
+    margin-top: 7px;
+    margin-left: 13px;
+}
+.rating{
+    width: 25%;
+    height: 15px;
+    margin-top: 15px;
+    margin-left: 13px;
+}
+.pricediv{
+    width: 100%;
+    height: 30px;
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 9px;
+}
+.pricediv>p{
+    
+    font-size: 2.8vh;
+    font-weight: bolder;
+}
+.pricediv p:nth-child(1){
+    text-decoration: line-through;
+    margin-left: 13px;
+
+}
+.pricediv p:nth-child(2){
+    
+    margin-right: 15px;
+
+}
+.btn1{
+    width: 90%;
+    height: 40px;
+    margin-left: 5%;
+    margin-top: 16px;
+    border-radius: 12px;
+    background-color: rgb(56, 167, 236);
+    color: white;
+    font-size: 2.4vh;
+    cursor: pointer;
+}
+.cartdiv{
+    width: 35%;
+    height: 88vh;
+    /* border: 1px solid #000; */
+    right: -35%;
+    top: 12%;
+    position: absolute;
+    transition-duration: 1s;
+    background-color: white;
+}
+.cartnav{
+    width: 100%;
+    height: 10%;
+    /* border: 1px solid #000; */
+    display: flex;
+}
+.cartimgsec{
+    width: 24.5%;
+    height: 100%;
+    text-align: center;
+    font-size: 2.4vh;
+    display: flex;
+    justify-content: center;
+background-color: white;
+border: 1px solid #000;
+    align-items: center;
+}
+.cartnamesec{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    font-size: 2.4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    background-color: white;
+
+}
+.cartpricesec{
+    width: 28%;
+    height: 100%;
+    text-align: center;
+    font-size: 2.4vh;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #000;
+    background-color: WHITE;
+    align-items: center;
+}
+.cartmain{
+    width: 100%;
+    height: 80%;
+    background-image: linear-gradient( 180deg, rgb(241, 113, 109), rgb(228, 123, 119));
+    /* overflow: scroll; */
+    position: relative;
+    overflow-y: scroll;
+}
+.cartshowdiv{
+    width: 100%;
+    height: 18vh;
+    position: relative;
+    /* background-color: lightgoldenrodyellow; */
+    border-bottom: 1px solid black;
+    
+
+}
+.cartimgdiv{
+    width: 20%;
+    height: 45%;
+    position: absolute;
+    top: 5%;
+    left: 2.5%;
+    /* background-color: lightgoldenrodyellow; */
+    border-bottom: 1px solid #000;
+
+}
+.cartnamediv{
+    width: 49.7%;
+    height: 50%;
+    /* background-color: lightgoldenrodyellow; */
+    position: absolute;
+   
+    /* border: 1px solid #000; */
+    left: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.4vh;
+    text-align: center;
+    color: black;
+
+}
+.cartpricediv{
+    width: 24%;
+    height: 50%;
+    /* background-color: rgb(196, 62, 9);
+    border: 1px solid #000; */
+    position: absolute;
+    left: 75%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.4vh;
+    color: black;
+
+}
+.cartimg{
+    width: 100%;
+    height: 100%;
+}
+.cartdelbtn{
+    width: 70%;
+    height: 26%;
+    background-color: rgb(92, 76, 236);
+    border: 1px solid #000;
+    position: absolute;
+    left: 15%;
+    top: 65%;
+    font-size: 2.5vh;
+    border-radius: 15px;
+}
+.cartdelbtn:hover{
+    cursor: pointer;
+    background-color: rgb(45, 116, 134);
+
+
+}
+.clrbtn{
+    width: 280px;
+    height: 45px;
+    bottom: 10px;
+    left: 25%;
+    border-radius: 12px;
+    background-color: rgb(214, 105, 105);
+    border: 1px solid #000;
+    position: absolute;
+    z-index: 1;
+
+}
